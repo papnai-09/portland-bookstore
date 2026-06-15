@@ -1,0 +1,177 @@
+:root {
+    --brand-primary: #8b1e1e;
+    --brand-secondary: #fff8ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--brand-secondary);
+    color: #2f2f2f;
+    line-height: 1.7;
+}
+
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1600&q=80");
+
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.event-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(5px);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--brand-primary);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    background: #701818;
+    box-shadow: 0 12px 25px rgba(139, 30, 30, 0.3);
+}
+
+.event-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+    color: var(--brand-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-heading p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.author-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.author-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.author-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.author-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.author-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--brand-primary);
+}
+
+.card-content p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .author-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-section {
+        padding: 4rem 1rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+}
