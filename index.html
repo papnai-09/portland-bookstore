@@ -1,102 +1,406 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portland Bookstore Author Reading</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>The Literary Nexus</title>
+
+    <meta name="description"
+        content="The Literary Nexus Signature Literary Series">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
 
-    <section class="hero">
-        <div class="hero-content">
-            <span class="event-tag">Portland Bookstore Presents</span>
+    <!-- NAVBAR -->
 
-            <h1>Author Reading Night</h1>
+    <nav class="navbar">
 
-            <p>
-                Join us for an evening of stories, conversation, and community
-                with some of today's most inspiring authors.
+        <div class="container nav-container">
+
+            <div class="logo">
+                Literary Nexus
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#registration">RSVP</a></li>
+                <li><a href="#venue">Venue</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="badge">
+                Signature Literary Series
+            </span>
+
+            <h1 id="eventTitle">
+                Literary Nexus Gala
+            </h1>
+
+            <p class="hero-subtitle">
+                Presented by The Literary Nexus
             </p>
 
-            <a href="#" class="cta-btn">Reserve Your Spot</a>
+            <h2>
+                An Evening of Literature, Creativity & Inspiration
+            </h2>
+
+            <div id="countdown" class="countdown">
+
+                <div class="count-box">
+                    00
+                    <span>Days</span>
+                </div>
+
+                <div class="count-box">
+                    00
+                    <span>Hours</span>
+                </div>
+
+                <div class="count-box">
+                    00
+                    <span>Minutes</span>
+                </div>
+
+                <div class="count-box">
+                    00
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+            <button
+                id="ctaBtn"
+                class="cta-btn">
+
+                Secure Your Exclusive Engagement Slot
+
+            </button>
+
         </div>
+
+    </header>
+
+    <!-- AUTHORS -->
+
+    <section
+        id="authors"
+        class="authors-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>
+                    Featured Speakers
+                </span>
+
+                <h2>
+                    Featured Literary Personalities
+                </h2>
+
+                <p>
+                    Meet celebrated authors and thought leaders who
+                    will share stories, experiences and insights.
+                </p>
+
+            </div>
+
+            <div
+                id="authorGrid"
+                class="author-grid">
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="event-section">
-        <div class="section-heading">
-            <h2>Featured Authors</h2>
-            <p>Meet the writers who will be sharing their stories and insights.</p>
+    <!-- SCHEDULE -->
+
+    <section
+        id="schedule"
+        class="schedule-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>
+                    Event Timeline
+                </span>
+
+                <h2>
+                    Engagement Schedule
+                </h2>
+
+            </div>
+
+            <div class="schedule-card">
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        7:00 PM
+                    </div>
+
+                    <div class="event">
+
+                        <h3>
+                            Welcome Reception
+                        </h3>
+
+                        <p>
+                            Guest check-in and networking session.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        7:30 PM
+                    </div>
+
+                    <div class="event">
+
+                        <h3>
+                            Author Reading
+                        </h3>
+
+                        <p>
+                            Exclusive literary reading and discussion.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        8:30 PM
+                    </div>
+
+                    <div class="event">
+
+                        <h3>
+                            Audience Q&A
+                        </h3>
+
+                        <p>
+                            Live audience interaction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        9:00 PM
+                    </div>
+
+                    <div class="event">
+
+                        <h3>
+                            Book Signing
+                        </h3>
+
+                        <p>
+                            Meet the authors and networking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="author-grid">
-
-            <article class="author-card">
-                <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
-                    alt="James Carter"
-                    loading="lazy"
-                >
-
-                <div class="card-content">
-                    <h3>James Carter</h3>
-                    <p>
-                        Award-winning novelist known for compelling literary
-                        fiction and unforgettable characters.
-                    </p>
-                </div>
-            </article>
-
-            <article class="author-card">
-                <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600"
-                    alt="Sarah Miller"
-                    loading="lazy"
-                >
-
-                <div class="card-content">
-                    <h3>Sarah Miller</h3>
-                    <p>
-                        Bestselling author whose work explores modern life,
-                        relationships, and identity.
-                    </p>
-                </div>
-            </article>
-
-            <article class="author-card">
-                <img
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600"
-                    alt="Michael Reed"
-                    loading="lazy"
-                >
-
-                <div class="card-content">
-                    <h3>Michael Reed</h3>
-                    <p>
-                        Historian and writer bringing fascinating stories from
-                        the past to today's readers.
-                    </p>
-                </div>
-            </article>
-
-            <article class="author-card">
-                <img
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600"
-                    alt="Emily Parker"
-                    loading="lazy"
-                >
-
-                <div class="card-content">
-                    <h3>Emily Parker</h3>
-                    <p>
-                        Poet and essayist celebrated for her thoughtful and
-                        inspiring contemporary works.
-                    </p>
-                </div>
-            </article>
-
-        </div>
     </section>
+
+    <!-- RSVP -->
+
+    <section
+        id="registration"
+        class="rsvp-section">
+
+        <div class="container">
+
+            <div class="rsvp-card">
+
+                <div class="section-header">
+
+                    <span>
+                        Reserve Your Seat
+                    </span>
+
+                    <h2>
+                        Confirm Attendance
+                    </h2>
+
+                </div>
+
+                <form id="rsvpForm">
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        required>
+
+                    <input
+                        type="email"
+                        placeholder="Professional Email"
+                        required>
+
+                    <input
+                        type="text"
+                        placeholder="Organization">
+
+                    <button
+                        type="submit"
+                        class="cta-btn">
+
+                        Confirm Attendance
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VENUE -->
+
+    <section
+        id="venue"
+        class="venue-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>
+                    Event Location
+                </span>
+
+                <h2>
+                    Venue Information
+                </h2>
+
+                <p>
+                    Experience an unforgettable evening at one of Portland's
+                    most prestigious cultural venues.
+                </p>
+
+            </div>
+
+            <div class="venue-card">
+
+                <div class="venue-info">
+
+                    <h3>
+                        Portland Grand Ballroom
+                    </h3>
+
+                    <p>
+                        123 Cultural Avenue<br>
+                        Portland, Oregon, USA
+                    </p>
+
+                    <p>
+                        Valet parking available.<br>
+                        Self-park options within 2 blocks.<br>
+                        Public transit accessible.
+                    </p>
+
+                    <a
+                        href="https://maps.google.com"
+                        target="_blank"
+                        class="cta-btn">
+
+                        Get Directions
+
+                    </a>
+
+                </div>
+
+                <div class="venue-map">
+
+                    <iframe
+                        src="https://maps.google.com/maps?q=Portland&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <h3>
+                The Literary Nexus
+            </h3>
+
+            <p>
+                Premium Literary Events & Cultural Experiences
+            </p>
+
+            <div class="footer-divider"></div>
+
+            <p>
+                © 2026 The Literary Nexus.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/app.js"></script>
 
 </body>
+
 </html>
